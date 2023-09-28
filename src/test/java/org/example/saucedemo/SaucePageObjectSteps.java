@@ -29,7 +29,6 @@ public class SaucePageObjectSteps {
     public void enterValidUsername() {
         LogInPage logInPage = new LogInPage(driver);
         logInPage.setUsername();
-        System.out.println("test");
     }
 
     @And("I enter a valid password")
@@ -60,5 +59,6 @@ public class SaucePageObjectSteps {
     @Then("I should see products sorted correctly")
     public void seeProductsSordedCorrectly() {
         MainPage mainPage = new MainPage(driver);
+        mainPage.checkSortingAsc();
     }
 }
