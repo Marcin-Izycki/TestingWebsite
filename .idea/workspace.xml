@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7905cf1-526d-419b-9124-e4879aa26e38" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cucumber/Features/sortingProducts.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/LogInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/SaucePageObjectSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/SaucePageObjectSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/MainPage.java" afterDir="false" />
     </list>
@@ -27,9 +26,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Marcin-Izycki&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="97d3aa13-3b4b-4b19-b024-1d2c675e0a47" />
+        <option name="url" value="https://github.com/Marcin-Izycki/TestingWebsite.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2VxC3wPYg8SwNGuzvnNOSgjxsFL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,7 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "onboarding.tips.debug.path": "D:/Repository/TestingWebsite/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -52,7 +65,7 @@
       <recent name="D:\Repository\TestingWebsite\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: logInAccount">
+  <component name="RunManager" selected="Cucumber Java.Feature: sortingProducts">
     <configuration name="Feature: logInAccount" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" />
@@ -61,6 +74,45 @@
       <module name="TestingWebsite" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: logInAccount" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: sortingProducts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/sortingProducts.feature" />
+      <option name="GLUE" value="org.example.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestingWebsite" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: sortingProducts" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Sort products by price (low to high)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/sortingProducts.feature" />
+      <option name="GLUE" value="org.example.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestingWebsite" />
+      <option name="NAME_FILTER" value="^Sort products by price \(low to high\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Sort products by price \(low to high\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Sort products by price (low to high)" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +161,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: logInAccount" />
+        <item itemvalue="Cucumber Java.Feature: sortingProducts" />
+        <item itemvalue="Cucumber Java.Scenario: Sort products by price (low to high)" />
         <item itemvalue="Cucumber Java.Scenario: User can log in to acc" />
+        <item itemvalue="Cucumber Java.Feature: logInAccount" />
         <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
@@ -132,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695769578217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <option name="closed" value="true" />
+      <created>1695839825443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695839825443</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

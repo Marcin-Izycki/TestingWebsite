@@ -4,6 +4,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.example.Main;
+import org.example.saucedemo.page.LogInPage;
 import org.example.saucedemo.page.MainPage;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -25,26 +27,38 @@ public class SaucePageObjectSteps {
 
     @When("^I enter a valid username$")
     public void enterValidUsername() {
-        MainPage mainPage = new MainPage(driver);
-        mainPage.setUsername();
+        LogInPage logInPage = new LogInPage(driver);
+        logInPage.setUsername();
         System.out.println("test");
     }
 
     @And("I enter a valid password")
     public void enterValidPassword() {
-        MainPage mainPage = new MainPage(driver);
-        mainPage.setPassword();
+        LogInPage logInPage = new LogInPage(driver);
+        logInPage.setPassword();
     }
 
     @And("I click the login button")
     public void clickLoginButton() {
-        MainPage mainPage = new MainPage(driver);
-        mainPage.pressBtnLogIn();
+        LogInPage logInPage = new LogInPage(driver);
+        logInPage.pressBtnLogIn();
     }
 
     @Then("I should be logged in and see product page")
     public void loggedInAndSeeProductPage() {
-        Assert.assertEquals(driver.getTitle(), "Swag Labs");
+        MainPage mainPage = new MainPage(driver);
+        mainPage.checkIn();
     }
 
+    // Sorting Products
+    @When("I sort products by price ascending")
+    public void sortProductByPriceAscending() {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.sortingAsc();
+    }
+
+    @Then("I should see products sorted correctly")
+    public void seeProductsSordedCorrectly() {
+        MainPage mainPage = new MainPage(driver);
+    }
 }
