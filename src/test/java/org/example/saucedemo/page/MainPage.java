@@ -44,18 +44,24 @@ public class MainPage {
     }
 
     public void checkSortingAsc() {
-        String firstPriceText = firstPrice.getText();
-        firstPriceText = firstPriceText.replace("$", "");
-        double firstValue = Double.parseDouble(firstPriceText);
 
-        String secondPriceText = secondPrice.getText();
-        secondPriceText = secondPriceText.replace("$", "");
-        double secondValue = Double.parseDouble(secondPriceText);
+        for (int i = 0; i < inventoryItemPrices.size() - 1; i++) {
+            WebElement firstElement = inventoryItemPrices.get(i);
+            WebElement secondElement = inventoryItemPrices.get(i+1);
 
-        Assert.assertTrue(firstValue < secondValue || firstValue == secondValue);
+            String firstPriceText = firstPrice.getText();
+            firstPriceText = firstPriceText.replace("$", "");
+            double firstValue = Double.parseDouble(firstPriceText);
 
-        // Działa ale chciałbym sprawdzić każdy element
-        // trzeba zrobić pętlę która sprawdzi pierwszy element z następnym
-        // Dobranoc
+            String secondPriceText = secondPrice.getText();
+            secondPriceText = secondPriceText.replace("$", "");
+            double secondValue = Double.parseDouble(secondPriceText);
+
+            Assert.assertTrue(firstValue <= secondValue);
+            //System.out.println("el" + i + " " + firstValue + " el" + (i + 1) + " " + secondValue);
+        }
+
+
+
     }
 }
