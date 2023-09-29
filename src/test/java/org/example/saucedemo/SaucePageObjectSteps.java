@@ -61,4 +61,17 @@ public class SaucePageObjectSteps {
         MainPage mainPage = new MainPage(driver);
         mainPage.checkSortingAsc();
     }
+
+    //LogOut
+    @When("I click the logout button")
+    public void clickTheLogoutButton() {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.logOut();
+    }
+
+    @Then("I should be logged out and see the login page")
+    public void shouldBeLoggedOutAndSeeTheLoginPage() {
+        LogInPage logInPage = new LogInPage(driver);
+        logInPage.checkForm();
+    }
 }

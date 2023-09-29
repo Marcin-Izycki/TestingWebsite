@@ -17,9 +17,11 @@ public class LogInPage {
     private WebElement userNameField;
     @FindBy(id = "password")
     private WebElement passwodField;
-
     @FindBy(id = "login-button")
     private WebElement loginBtn;
+    @FindBy(id = "login_button_container")
+    private WebElement loginBtnContainer;
+
     public void setUsername() {
         userNameField.click();
         userNameField.clear();
@@ -32,5 +34,9 @@ public class LogInPage {
 
     public void pressBtnLogIn() {
         loginBtn.click();
+    }
+
+    public void checkForm() {
+        loginBtnContainer.isEnabled();
     }
 }

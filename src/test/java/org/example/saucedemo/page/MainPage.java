@@ -27,6 +27,11 @@ public class MainPage {
     private WebElement secondPrice;
     @FindAll(@FindBy(css = ".inventory_item_price"))
     private List<WebElement> inventoryItemPrices;
+    @FindBy(id = "react-burger-menu-btn")
+    private WebElement menuBtn;
+    @FindBy(id = "logout_sidebar_link")
+    private WebElement logoutBtn;
+
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -60,8 +65,10 @@ public class MainPage {
             Assert.assertTrue(firstValue <= secondValue);
             //System.out.println("el" + i + " " + firstValue + " el" + (i + 1) + " " + secondValue);
         }
+    }
 
-
-
+    public void logOut() {
+        menuBtn.click();
+        logoutBtn.click();
     }
 }
