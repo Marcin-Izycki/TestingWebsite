@@ -92,4 +92,15 @@ public class SaucePageObjectSteps {
         CartPage cartPage = new CartPage(driver);
         cartPage.checkCartItemDisplay();
     }
+    //delate products to cart
+    @And("I remove the product from the cart")
+    public void removeTheProductFromTheCart() {
+        CartPage cartPage = new CartPage(driver);
+        cartPage.removeItemCart();
+    }
+    @Then("the product should be removed from the cart")
+    public void productShouldBeRemovedFromTheCart() {
+        CartPage cartPage = new CartPage(driver);
+        cartPage.checkCartEmpty();
+    }
 }

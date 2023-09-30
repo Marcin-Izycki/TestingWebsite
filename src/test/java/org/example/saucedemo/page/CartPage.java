@@ -1,5 +1,7 @@
 package org.example.saucedemo.page;
 
+import org.junit.Assert;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.devtools.v85.page.Page;
@@ -17,11 +19,21 @@ public class CartPage {
     private WebElement cartIconBtn;
     @FindBy(css = ".cart_item")
     private WebElement cartItem;
+    @FindBy(id = "remove-sauce-labs-backpack")
+    private WebElement removeBtn;
+    @FindBy(css = ".removed_cart_item")
+    private WebElement removeCartItem;
 
     public void openCart() {
         cartIconBtn.click();
     }
     public void checkCartItemDisplay() {
         cartItem.isDisplayed();
+    }
+    public void removeItemCart() {
+        removeBtn.click();
+    }
+    public void checkCartEmpty() {
+        Assert.assertTrue(removeCartItem.isEnabled());
     }
 }

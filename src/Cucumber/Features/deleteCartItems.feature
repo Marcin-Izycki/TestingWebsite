@@ -7,6 +7,8 @@ Feature: Delete product from cart
     And I click the login button
 
   Scenario: Delete product from cart
-    Given I have a product in the cart
-    When I remove the product from the cart
+    When I select a product to add to the cart
+    And I click the cart button
+    Then the product should be added to the cart
+    And I remove the product from the cart
     Then the product should be removed from the cart
