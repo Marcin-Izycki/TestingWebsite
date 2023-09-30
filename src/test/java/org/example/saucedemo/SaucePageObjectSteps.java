@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.Main;
+import org.example.saucedemo.page.CartPage;
 import org.example.saucedemo.page.LogInPage;
 import org.example.saucedemo.page.MainPage;
 import org.junit.Assert;
@@ -73,5 +74,22 @@ public class SaucePageObjectSteps {
     public void shouldBeLoggedOutAndSeeTheLoginPage() {
         LogInPage logInPage = new LogInPage(driver);
         logInPage.checkForm();
+    }
+
+    //add products to cart
+    @When("I select a product to add to the cart")
+    public void selectProductToAddToTheCart() {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.setAddCartBtn();
+    }
+    @And("I click the cart button")
+    public void clickTheCartButton() {
+        CartPage cartPage = new CartPage(driver);
+        cartPage.openCart();
+    }
+    @Then("the product should be added to the cart")
+    public void productShouldBeAddedToTheCart() {
+        CartPage cartPage = new CartPage(driver);
+        cartPage.checkCartItemDisplay();
     }
 }

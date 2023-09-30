@@ -8,5 +8,5 @@ Feature: Add products to cart list
 
   Scenario: Add product to cart
     When I select a product to add to the cart
-    And I click the ADD TO CART button
+    And I click the cart button
     Then the product should be added to the cart

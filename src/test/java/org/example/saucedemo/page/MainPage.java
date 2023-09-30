@@ -31,6 +31,10 @@ public class MainPage {
     private WebElement menuBtn;
     @FindBy(id = "logout_sidebar_link")
     private WebElement logoutBtn;
+    @FindBy(id = "add-to-cart-sauce-labs-backpack")
+    private WebElement addCartBtn;
+    @FindBy(id = "remove-sauce-labs-backpack")
+    private WebElement removeCartBtn;
 
 
     public MainPage(WebDriver driver) {
@@ -70,5 +74,10 @@ public class MainPage {
     public void logOut() {
         menuBtn.click();
         logoutBtn.click();
+    }
+
+    public void setAddCartBtn() {
+        addCartBtn.click();
+        Assert.assertEquals(removeCartBtn.getText(), "Remove");
     }
 }
