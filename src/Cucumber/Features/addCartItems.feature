@@ -7,6 +7,7 @@ Feature: Add products to cart list
     And I click the login button
 
   Scenario: Add product to cart
+    #Given  I run the "User logs in" scenario from "logInAccount.feature"
     When I select a product to add to the cart
     And I click the cart button
     Then the product should be added to the cart

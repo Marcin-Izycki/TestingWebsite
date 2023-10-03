@@ -1,6 +1,6 @@
 Feature: Log In
 
-  Scenario: User can log in to acc
+  Scenario: User logs in
 
     Given an open browser with saucedemo.com
     When I enter a valid username

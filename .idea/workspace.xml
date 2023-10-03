@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7905cf1-526d-419b-9124-e4879aa26e38" name="Changes" comment="adding products to cart list scenario">
+    <list default="true" id="d7905cf1-526d-419b-9124-e4879aa26e38" name="Changes" comment="adding remove product from cart scenario">
+      <change afterPath="$PROJECT_DIR$/src/Cucumber/Features/orderProduct.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/deleteCartItems.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/deleteCartItems.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/addCartItems.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/addCartItems.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/productDetale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/productDetale.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/SaucePageObjectSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/SaucePageObjectSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/CartPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,26 @@
       <recent name="D:\Repository\TestingWebsite\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: deleteCartItems">
+  <component name="RunManager" selected="Cucumber Java.All Features in: Features">
+    <configuration name="All Features in: Features" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features" />
+      <option name="GLUE" value="org.example.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestingWebsite" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: Features" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: addCartItems" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/addCartItems.feature" />
@@ -121,25 +142,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: sortingProducts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/sortingProducts.feature" />
-      <option name="GLUE" value="org.example.saucedemo" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="TestingWebsite" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: sortingProducts" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Delete product from cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/deleteCartItems.feature" />
@@ -162,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.All Features in: Features" />
         <item itemvalue="Cucumber Java.Feature: deleteCartItems" />
         <item itemvalue="Cucumber Java.Scenario: Delete product from cart" />
         <item itemvalue="Cucumber Java.Feature: addCartItems" />
         <item itemvalue="Cucumber Java.Feature: logOutAccount" />
-        <item itemvalue="Cucumber Java.Feature: sortingProducts" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696084037239</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding remove product from cart scenario">
+      <option name="closed" value="true" />
+      <created>1696088305057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696088305057</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,7 +245,8 @@
     <MESSAGE value="adding Assertion for checking if sorting price is correct" />
     <MESSAGE value="adding logout scenario" />
     <MESSAGE value="adding products to cart list scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding products to cart list scenario" />
+    <MESSAGE value="adding remove product from cart scenario" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding remove product from cart scenario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

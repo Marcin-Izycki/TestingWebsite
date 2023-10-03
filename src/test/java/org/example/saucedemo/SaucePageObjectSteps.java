@@ -103,4 +103,9 @@ public class SaucePageObjectSteps {
         CartPage cartPage = new CartPage(driver);
         cartPage.checkCartEmpty();
     }
+    //order products
+    @Then("I checkout")
+    public void iCheckout() {
+
+    }
 }
