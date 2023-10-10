@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.Main;
 import org.example.saucedemo.page.CartPage;
+import org.example.saucedemo.page.CheckoutPage;
 import org.example.saucedemo.page.LogInPage;
 import org.example.saucedemo.page.MainPage;
 import org.junit.Assert;
@@ -106,6 +107,19 @@ public class SaucePageObjectSteps {
     //order products
     @Then("I checkout")
     public void iCheckout() {
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.checkIn();
+    }
 
+    @And("Complete the fields with valid data")
+    public void completeTheFieldsWithValidData() {
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.setValidData();
+    }
+
+    @And("Finish order")
+    public void finishOrder() {
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.setContinueBtn();
     }
 }

@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7905cf1-526d-419b-9124-e4879aa26e38" name="Changes" comment="adding remove product from cart scenario">
-      <change afterPath="$PROJECT_DIR$/src/Cucumber/Features/orderProduct.feature" afterDir="false" />
+    <list default="true" id="d7905cf1-526d-419b-9124-e4879aa26e38" name="Changes" comment="adding checkout scenario feature file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/addCartItems.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/addCartItems.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/logInAccount.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/productDetale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/productDetale.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/SaucePageObjectSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/SaucePageObjectSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/checkoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/saucedemo/page/CheckoutPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <recent name="D:\Repository\TestingWebsite\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.All Features in: Features">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Make an order and finish">
     <configuration name="All Features in: Features" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features" />
@@ -123,25 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: logOutAccount" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/logOutAccount.feature" />
-      <option name="GLUE" value="org.example.saucedemo" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="TestingWebsite" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: logOutAccount" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Delete product from cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/deleteCartItems.feature" />
@@ -162,13 +140,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Make an order and finish" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/orderProduct.feature" />
+      <option name="GLUE" value="org.example.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestingWebsite" />
+      <option name="NAME_FILTER" value="^Make an order and finish$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Make an order and finish$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Make an order and finish" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Make an order and finish" />
         <item itemvalue="Cucumber Java.All Features in: Features" />
+        <item itemvalue="Cucumber Java.Feature: addCartItems" />
         <item itemvalue="Cucumber Java.Feature: deleteCartItems" />
         <item itemvalue="Cucumber Java.Scenario: Delete product from cart" />
-        <item itemvalue="Cucumber Java.Feature: addCartItems" />
-        <item itemvalue="Cucumber Java.Feature: logOutAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696088305057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding checkout scenario feature file">
+      <option name="closed" value="true" />
+      <created>1696355395914</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696355395914</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -246,7 +252,8 @@
     <MESSAGE value="adding logout scenario" />
     <MESSAGE value="adding products to cart list scenario" />
     <MESSAGE value="adding remove product from cart scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding remove product from cart scenario" />
+    <MESSAGE value="adding checkout scenario feature file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding checkout scenario feature file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
